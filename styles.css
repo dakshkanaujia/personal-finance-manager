@@ -1,0 +1,85 @@
+/* .responsive-div {
+    width: 100vw;
+    height: 90vh;
+} */
+
+.add-btn:hover {
+    cursor: pointer;
+}
+  
+.custom-textarea {
+    /* padding: 10px; */
+    display: flex;
+    justify-content: start;
+    margin-left: 15px;
+    font-size: 18px;
+    align-items: center;
+    outline: none; /* Remove default focus outline */
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+#Investments::-webkit-scrollbar {
+    margin: 5px;
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+#Investments::-webkit-scrollbar-thumb {
+    background-color: #78d86f; /* Set the color of the thumb */
+    border-radius: 6px; /* Optional: Add rounded corners to the thumb */
+}
+
+#Investments::-webkit-scrollbar-track {
+    background-color: #eee; /* Set the color of the track */
+}
+
+#expenses::-webkit-scrollbar,
+#Income::-webkit-scrollbar {
+    margin: 5px;
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+#expenses::-webkit-scrollbar-thumb{
+    background-color: #fc9e97; /* Set the color of the thumb */
+    border-radius: 6px; /* Optional: Add rounded corners to the thumb */
+}
+#Income::-webkit-scrollbar-thumb {
+    background-color: aquamarine; /* Set the color of the thumb */
+    border-radius: 6px; /* Optional: Add rounded corners to the thumb */
+}
+
+#expenses::-webkit-scrollbar-track,
+#Income::-webkit-scrollbar-track {
+    background-color: #eee; /* Set the color of the track */
+}
+
+@keyframes blinkFade {
+    0% { background-color: red; color: white; }
+    25% { background-color: yellow; color: black;}
+    50% { background-color: red; color: white; }
+    75% { background-color: yellow; color: black;}
+    100% { background-color: red; color: white; }
+}
+
+#addItem{
+    animation: blinkFade 7s infinite; /* 2s duration, infinite loop */
+}
+
+.fixed-bottom-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15%;
+}
+
+.fixed-bottom-right:hover {
+    transition: 1s;
+    cursor: pointer;
+    background-color: red;
+}
