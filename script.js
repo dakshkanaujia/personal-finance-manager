@@ -67,7 +67,7 @@ function cleanItems(){
 setTimeout(function() {
     if (myObj.name === "" || myObj.name === null || myObj.name === undefined) {
         do {
-            userInput = prompt("Please enter something:");
+            userInput = prompt("Enter your Name!");
         } while (userInput === null || userInput.trim() === "");
         myObj.name = userInput;
         setToStorage();
